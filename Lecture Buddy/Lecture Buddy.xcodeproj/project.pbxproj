@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56CB04D61D061B8E00EAC9ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56CB04D51D061B8E00EAC9ED /* GoogleService-Info.plist */; };
+		56CB04D81D061CFC00EAC9ED /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 56CB04D71D061CFC00EAC9ED /* Podfile */; };
+		877E60DCF472986DFF823A36 /* Pods_Lecture_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10D1946695A49EA7E21FF25 /* Pods_Lecture_Buddy.framework */; };
 		92339F311D0610470070745C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92339F301D0610470070745C /* AppDelegate.swift */; };
 		92339F331D0610470070745C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92339F321D0610470070745C /* FirstViewController.swift */; };
 		92339F351D0610470070745C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92339F341D0610470070745C /* SecondViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AA542CF6BED30323607B15E /* Pods-Lecture Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture Buddy/Pods-Lecture Buddy.release.xcconfig"; sourceTree = "<group>"; };
+		56CB04D51D061B8E00EAC9ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56CB04D71D061CFC00EAC9ED /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		92339F2D1D0610470070745C /* Lecture Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lecture Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92339F301D0610470070745C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92339F321D0610470070745C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		92339F391D0610470070745C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92339F3C1D0610470070745C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92339F3E1D0610470070745C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C96EA6F83FEC5F7BC03D719 /* Pods-Lecture Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture Buddy/Pods-Lecture Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		F10D1946695A49EA7E21FF25 /* Pods_Lecture_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lecture_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877E60DCF472986DFF823A36 /* Pods_Lecture_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30EFC092F0912B86BD3AC5E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F10D1946695A49EA7E21FF25 /* Pods_Lecture_Buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C0182BB3AF8EAB519E15019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C96EA6F83FEC5F7BC03D719 /* Pods-Lecture Buddy.debug.xcconfig */,
+				1AA542CF6BED30323607B15E /* Pods-Lecture Buddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92339F241D0610470070745C = {
 			isa = PBXGroup;
 			children = (
+				56CB04D71D061CFC00EAC9ED /* Podfile */,
 				92339F2F1D0610470070745C /* Lecture Buddy */,
 				92339F2E1D0610470070745C /* Products */,
+				3C0182BB3AF8EAB519E15019 /* Pods */,
+				30EFC092F0912B86BD3AC5E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +92,7 @@
 				92339F391D0610470070745C /* Assets.xcassets */,
 				92339F3B1D0610470070745C /* LaunchScreen.storyboard */,
 				92339F3E1D0610470070745C /* Info.plist */,
+				56CB04D51D061B8E00EAC9ED /* GoogleService-Info.plist */,
 			);
 			path = "Lecture Buddy";
 			sourceTree = "<group>";
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92339F411D0610470070745C /* Build configuration list for PBXNativeTarget "Lecture Buddy" */;
 			buildPhases = (
+				5DADF3EDD62A494F22F418A4 /* 📦 Check Pods Manifest.lock */,
 				92339F291D0610470070745C /* Sources */,
 				92339F2A1D0610470070745C /* Frameworks */,
 				92339F2B1D0610470070745C /* Resources */,
+				C8E605F44A36153F251AF4E9 /* 📦 Embed Pods Frameworks */,
+				2AF11111359E372D9D9042F4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,13 +158,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CB04D81D061CFC00EAC9ED /* Podfile in Resources */,
 				92339F3D1D0610470070745C /* LaunchScreen.storyboard in Resources */,
+				56CB04D61D061B8E00EAC9ED /* GoogleService-Info.plist in Resources */,
 				92339F3A1D0610470070745C /* Assets.xcassets in Resources */,
 				92339F381D0610470070745C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AF11111359E372D9D9042F4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lecture Buddy/Pods-Lecture Buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DADF3EDD62A494F22F418A4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E605F44A36153F251AF4E9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lecture Buddy/Pods-Lecture Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92339F291D0610470070745C /* Sources */ = {
@@ -253,6 +336,7 @@
 		};
 		92339F421D0610470070745C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C96EA6F83FEC5F7BC03D719 /* Pods-Lecture Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lecture Buddy/Info.plist";
@@ -264,6 +348,7 @@
 		};
 		92339F431D0610470070745C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA542CF6BED30323607B15E /* Pods-Lecture Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lecture Buddy/Info.plist";
@@ -292,6 +377,7 @@
 				92339F431D0610470070745C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
